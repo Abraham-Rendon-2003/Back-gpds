@@ -18,9 +18,10 @@ services:
     ports:
       - "8083:8080"
     environment:
-      spring.datasource.url: jdbc:mysql://mysql-db:3306
+      spring.datasource.url: jdbc:mysql://mysql-db:3306/autos_db
       spring.datasource.username: autos
       spring.datasource.password: autos2024
       spring.jpa.hibernate.ddl-auto: create
     depends_on:
       - mysql-db
+
